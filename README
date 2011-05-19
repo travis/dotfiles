@@ -1,8 +1,16 @@
 To install:
 
-cd ~/ 
+cd ~/
+mv bin bin.old
+git clone git@github.com:travis/dotfiles.git bin
+easy_install Mercurial
+~/bin/vcprompt-install
 mv .bashrc old.bashrc
 mv .bash_profile old.bash_profile
 ln -s ~/bin/dotfiles/bashrc .bashrc
 ln -s ~/bin/dotfiles/bash_profile .bash_profile
 
+cd bin
+git submodule update --init
+
+cd
