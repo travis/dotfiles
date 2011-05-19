@@ -1,0 +1,8 @@
+To install:
+
+cd ~/ 
+mv .bashrc old.bashrc
+mv .bash_profile old.bash_profile
+ln -s ~/bin/dotfiles/bashrc .bashrc
+ln -s ~/bin/dotfiles/bash_profile .bash_profile
+
