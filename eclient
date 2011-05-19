@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z $EMACS_CLIENT ]
+then
+    echo "Please set EMACS_CLIENT"
+    exit 1
+fi
+if [ -z "$EMACS_SERVER" ]
+then
+    echo "Please set EMACS_SERVER"
+    exit 1
+fi
+$EMACS_CLIENT $@ -a "$EMACS_SERVER"
