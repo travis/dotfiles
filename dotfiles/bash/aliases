@@ -2,8 +2,8 @@
 
 # Utility
 alias reload='source ~/bin/dotfiles/bash/aliases'
-alias ea='eclient ~/bin/dotfiles/bash/aliases && reload' # Edit aliases
-alias ee="eclient ~/bin/dotfiles/bash/env"
+alias ea='ec ~/bin/dotfiles/bash/aliases && reload' # Edit aliases
+alias ee="ec ~/bin/dotfiles/bash/env"
 
 # Quicker cd
 alias cg='cd /Library/Ruby/Gems/1.8/gems/'
@@ -216,3 +216,7 @@ function __rm_single_file(){
 
 # vnc
 alias lappy="open vnc://lappy.local"
+
+# emacs
+alias emacs=ec
+alias e=ec
